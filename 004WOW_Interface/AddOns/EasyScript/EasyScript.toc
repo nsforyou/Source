@@ -1,8 +1,8 @@
 ﻿## Interface: 11200
 ## Title: EasyScript
-## Title-zhCN:|CFFFF8000辅助|R 个性化功能定制
+## Title-zhCN:|CFFFF8000辅助|R 各职业宏函数化
 ## Notes-zhCN: |CFFDD66DDSlashLib|R 见LUA文件
-## Author: Never End 坚韧的风
+## Author: QQ:270736475;wow0.org 罗袜生尘
 ## DefaultState: Enabled
 ## Version: 1.0.0
 EasyScript.lua

@@ -23,7 +23,7 @@ L:RegisterTranslations("enUS", function() return {
 } end)
 
 L:RegisterTranslations("zhCN", function() return {
-	["follow"] = "密语邀请",
+	["follow"] = "密语跟随",
 	["Options for sending out party follows."] = "自动邀请密语你关键字的玩家",
 	["follow text"] = "关键字",
 	["The text users send to trigger an follow."] = "密语关键字",
