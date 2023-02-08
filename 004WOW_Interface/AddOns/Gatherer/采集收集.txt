@@ -1,0 +1,144 @@
+﻿Gatherer
+2.2.3.1
+
+
+http://gathereraddon.com/
+http://gatherer.sf.net/
+http://www.curse-gaming.com/en/wow/addons-44-gatherer.html
+
+
+
+
+
+Description
+
+ATTENTION: since many people seems to be asking for premade database lately and aren't willing to go collect their own data, I'll stress one more time that Database importing IS NOT SUPPORTED.
+And please, do not post url pointing to site hosting such files.
+
+Gatherer is a WoW addon for herbalists, miners and treasure hunters. It's main purpose is to track the closest plants, deposits and treasure locations on you minimap.
+
+The addon does not track like a tracking ability does, rather it "remembers" where you have found various items in the past. It does this whenever you gather (perform herbalism, mining or opening) on an item, and records the specific map location in it's history. From then on, whenever the item comes into range of being one of the closest 1-25 (configurable) items to your present location, it will pop up on you minimap (see screenshot here).
+
+Installation:
+Installation is easy, simply download the above zip file, and expand it's contents into the "World of Warcraft/Interface/AddOns" folder. The final path of the files when extracted with full path information should be "World of Warcraft/Interface/AddOns/Gatherer"
+
+Usage:
+The usage of Gatherer is fairly straightforward. You simply use the game as normal, and the tracked items will appear in you minimap as soon as you gather them.
+
+There are several configuration options and commands that can be configured via slash commands within the game.
+
+/gather on - turns on the minimap tracking functionality.
+/gather off - turns off the minimap tracking functionality. (note, gathering activities are still tracked, even though they do not appear in the minimap)
+/gather toggle - toggles the gatherer between on and off states.
+/gather dist number - sets the minimap tracking distance to this number of units. (1 unit = 4 seconds of travel)
+/gather num number - sets the maximum number of items that will appear in your minimap at once (max 25)
+/gather theme name - changes the default icon theme (available themes: original, shaded, iconic; default = shaded)
+/gather idist number - sets a pixel distance in your minimap before the icons will change to iconic (default = 40, minimap radius = 60)
+/gather herbs (on|off|auto) - select whether to show herb data on the minimap
+/gather mining (on|off|auto) - select whether to show mining data on the minimap
+/gather treasure (on|off|auto) - select whether to show treasure data on the minimap
+/gather options - show/hide configuration dialog
+/gather loginfo (on|off) - show/hide configuration info at logon
+
+If you find any bugs, please use the tracker on the sourceforge site (http://sourceforge.net/tracker/?group_id=137353), forums are also available at http://norganna.org/bb/index.php?showforum=8 .
+
+Notes:
+The herbs, mining and treasure options are per-character settings (meaning it remembers the settings for each character individually.
+The auto setting uses the character's skills to determine whether they should see the herbs or mines. Treasures are always shown when they are on auto.
+The Database itself is sharer across all characters.
+Changelogs
+
+2.2.3.1:
+========
+
+# Bug Fix:
+- forced overlay frame identifier to integer values when computing these dynamically for world map buttons
+- forced UI options that were meant to be saved as numbers to number in default and changed values.
+- alternate recording method using tooltips added to workaround 1.12 Blizzard bug not displaying chatline for gathering.
+
+# Changes:
+- removed world map buttons, these are now generated dynamically.
+
+# Localization:
+- french change from "Dark Iron" to "sombrefer" added to list for fixed items (run zone match with fix item checked to apply)
+
+2.2.3 (toc 11100): WARNING: the extraction folder changed this version, extract directly in the Interface\Addons folder
+==================
+
+2.2.3:
+======
+# Bug Fix:
+- Fixed some checkboxes positions and edit boxes size in the Globals tabs
+- Fixed default icon for worldmap notes to prevent spam in FrameXML.log
+- Fixed Event processing not to occur while zoning.
+- Addon init, use a string forced to lower case to get addons name (which match the folder/toc name, while windows is not case sensitive, the WoW client is) to have initialisation occur even if the folder is misnamed on hard drive.
+- Removed forced delay when handling world map overlays.
+- Quick fix for fishing to prevent recording on some silithus mobs.
+
+# Changes:
+- drop down menus reworked (and sorted alphabetically)
+- some code optimisation
+
+# Item:
+- French localisation: fixed Sauge-argent and added name transition to list of fixed names.
+- felwood plants added.
+
+# Localization:
+- german localization fixes and zone match transition matrix for 1.11
+
+2.2.2 (toc 11000): WARNING: the extraction folder changed this version, extract directly in the Interface\Addons folder
+==================
+# Bug Fix:
+- Tooltips usage should be fixed (ie. no error if you don't have the proper tooltip)
+- German localisation: added bloodpetal to list of fixed name, new transition matrix for 1.10.
+- French localisation: name for trade skill updated (as per change made in 1.9.3 wow client).
+
+# New:
+- Added records for Fishing in nodes: works slightly differently from usual recording.
+* First recording method, uses Trunks and Bloated fish to automatically record where you stand (type assigned to Floating wreck, even though it's not always true).
+* Second record method, uses the node tooltip, in order to do that, you must autoloot (shift click the bobber) AND move slightly the cursor to make the node tooltip appear.
+Fishing categories are: School (all type of school node), Floating Wreckage (include Oil Spill) and Elemental water.
+
+2.2.1 (toc 10900, fix release):
+======
+# Bug Fix:
+- Arthas tear format forced on gathering (zone match, identical source and destination with item fix checkbox selected needed).
+- Fix for french Pi�ge � langouste and pousse de p�tale-de-sang (zone match, identical source and destination with item fix checkbox selected needed).
+- chinese UI localization updated.
+- Scrollbars graphic fixed.
+- scaling for icon fade under min distance added
+- fix name for old Firebloom name included in german item name fix list.
+- default value for max distance is now 20 instead of infinite, search limited to current zone.
+
+# New:
+- Added iconshade theme, icons are displayed all the time, but shade under min icon distance (40% by default if shade under min distance is set at 100).
+
+2.2.0 (toc 10900):
+==================
+
+Edit: German users, there is an extra file for you to download to fix the new zone order and zone match tables, unzip directly inside the 2.2.0 folder (Interface\Addons\Gatherer). You still need to do a zone rematch after that of course (from DE_1_8_0 to DE_1_9_0).
+
+# Bug Fix:
+- map delay/freeze problem fixed, brought back max items displayed on world map to 600.
+- fixed typo in GathererUI_Lang.lua for zone match (french localization only) with fix item checked.
+- added extra convertion of old style quote to standard quote for german version (zone match, fix item checked).
+- Silithus scale and offset fixed (courtesy of an unknown contributor on the forum who did the math).
+- added extra check to prevent record in pre-instance zones
+- zoomlevel (indoors too) taken into account for minimum icon distance.
+- Put node icons back under character icon/pointer (minimap)
+
+# Change:
+- Mininote tooltips display multiple nodes at the same location.
+- Added radius component to minimap icon position.
+- Added reset button for filters
+- added sub-menu for item filters dropdown (herbs).
+
+# New:
+- native In-game Help
+
+NOTE: complete changelog can be found in the readme.txt file included in the archive.
+Dependencies
+
+No dependencies listed
+
+Optional dependencies: myAddons 2.0

@@ -1,0 +1,20 @@
+﻿## Interface: 11200
+## Title: EasyScript
+## Title-zhCN:|CFFFF8000辅助|R 个性化功能定制
+## Notes-zhCN: |CFFDD66DDSlashLib|R 见LUA文件
+## Author: Never End 坚韧的风
+## DefaultState: Enabled
+## Version: 1.0.0
+EasyScript.lua
+Mage.lua
+Paladin.lua
+Warrior.lua
+Warlock.lua
+Priest.lua
+Druid.lua
+Shaman.lua
+Rogue.lua
+Hunter.lua
+EasyScript.xml
+
+

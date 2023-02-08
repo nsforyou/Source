@@ -1,0 +1,7 @@
+## Interface: 11200
+## Title: 自动任务接受完成
+## Notes: Skips social dialogue, automates quest accepting/turning in.
+## Author: Industrial
+## Q-CAT-Version: 000100
+
+Addon.lua

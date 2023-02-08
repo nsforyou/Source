@@ -1,0 +1,11 @@
+## Interface: 11200
+## Title: FancyAH
+## Notes: Contains a lot of functions
+## Title-zhCN:|CFFFF8000辅助|R 拍卖行快捷右键
+## Notes-zhCN:|CFFDD66DDFancyAH|R 拍卖行卖东西右键即可，不必拖动。
+## X-Repple: 辅助
+## Author: Anaron
+## Version: 1.0.0
+## Dependencies:
+
+FancyAH.lua

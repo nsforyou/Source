@@ -1,0 +1,32 @@
+/script if UnitCanAttack("target","player") and UnitHealth("target")>1 then if not AtkSpell then for AtkSlot = 1,180 do  if IsAttackAction(AtkSlot) then AtkSpell = AtkSlot;end;end;end; if not IsCurrentAction(AtkSpell) then UseAction(AtkSpell);end;else SetCVar("targetNearestDistance", 8);TargetNearestEnemy();SetCVar("targetNearestDistance", 41);end;
+/script	if UnitHealth("target")/UnitHealthMax("target") <0.2 then CastSpellByName("斩杀");end;
+/script CastSpellByName("致死打击");
+/script if UnitMana("Player") >68 then CastSpellByName("旋风斩");end;
+/script if UnitMana("Player") >43 then CastSpellByName("英勇打击");end;
+/script if UnitMana("Player") <25 then CastSpellByName("狂暴姿态");end;
+
+
+/script local a=GetShapeshiftFormInfo(index);SendChatMessage(a,s);
+
+
+/script GS=GetShapeshiftFormInfo;CS=CastSpellByName;_,_,isActive,_ = GS(3);if isActive~=nil then CS("狂暴之怒") else CS("狂暴姿态");end
+
+/script _,_,isActive,_ = GetShapeshiftFormInfo(3);if isActive~=nil then SendChatMessage("当前为狂暴姿态",s); end
+/script _,_,isActive,_ = GS(2);if isActive~=nil then CS("攻击") else CS("防御姿态");end
+
+
+
+/script if UnitCanAttack("target","player") and UnitHealth("target")>1 then if not AtkSpell then for AtkSlot = 1,120 do  if IsAttackAction(AtkSlot) then AtkSpell = AtkSlot;end;end;end; if not IsCurrentAction(AtkSpell) then UseAction(AtkSpell);end;else SetCVar("targetNearestDistance", 8);TargetNearestEnemy();SetCVar("targetNearestDistance", 41);end;
+/script	if UnitHealth("target")/UnitHealthMax("target") <0.2 then CastSpellByName("斩杀");end;
+/script CastSpellByName("致死打击");
+/script if UnitMana("Player") >=45 then CastSpellByName("英勇打击");end;
+/script _,_,isActive,_ = GetShapeshiftFormInfo(1);if isActive~=nil and UnitMana("Player") >=60 then CastSpellByName("横扫攻击");else CastSpellByName("旋风斩");end;
+/script if UnitMana("Player") <25 then CastSpellByName("狂暴姿态");end;
+
+/script if UnitAffectingCombat("player") then CastSpellByName("拦截") elseif UnitMana("player")>46 then CastSpellByName("拦截") else CastSpellByName("冲锋")end;
+
+
+
+
+骑士篇
+/script if UnitCanAttack("target","player") and UnitHealth("target")>1 then if not AtkSpell then for AtkSlot = 12,84 do if IsAttackAction(AtkSlot) then AtkSpell = AtkSlot;end;end;end; if not IsCurrentAction(AtkSpell) then UseAction(AtkSpell);end; local i,d,fa;for i=1,32 do d=UnitDebuff("target",i);if d and strfind(d,"HolySmite") then fa=1;break;end;end;if not fa then local i,d,fb;for i=1,32 do d=UnitBuff("player",i);if d and strfind(d,"HolySmite") then fb=1;break;end;end;if fb then CastSpellByName("审判");else CastSpellByName("十字军圣印") end; else local i,d,fc;for i=1,32 do d=UnitBuff("player",i);if d and strfind(d,"InnerRage") then fc=1;break;end;end;if fc then CastSpellByName("审判");else CastSpellByName("命令圣印") end;end;else SetCVar("targetNearestDistance", 15);TargetNearestEnemy();SetCVar("targetNearestDistance", 41);end;

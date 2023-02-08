@@ -1,0 +1,15 @@
+## Interface: 11200
+## Title: MailTo
+## Notes: Mail management and tracking.
+## Title-zhCN:|CFFFF8000辅助|R 收件人记录
+## Notes-zhCN:|CFFDD66DDMailTo|R 在收件人位置添加一个下拉菜单，保存收件人的名字，以便可以长期使用，也可以将其移除。
+## X-Repple: 辅助
+## Author: Vincent
+## OptionalDeps: CmdHelp, CharacterProfiler
+## Dependencies: 
+## SavedVariables: MailTo_List, MailTo_Log, MailTo_Sendee, MailTo_Inbox, MailTo_Mail, MailTo_Option
+## SavedVariablesPerCharacter: MailTo_ReceivedLog
+localization.lua
+localization.zh.lua
+MailTo.xml
+MailTo.lua

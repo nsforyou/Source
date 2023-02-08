@@ -1,0 +1,11 @@
+## Interface: 11200
+## Title: X-Guild
+## Title-zhCN: X-Guild公会好友职业着色
+## Version: 1.2.0
+## Notes: Color your Guild/WhoIs/Friends Window
+## Notes-zhCN: 彩色你的公会、查询、好友列表
+## Author: Zek、Xgale
+## OptionalDeps:
+## SavedVariables:
+XGuild.lua
+## Q-CAT-Version: 100

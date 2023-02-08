@@ -1,0 +1,12 @@
+﻿## Interface: 11200
+## Title: ItemRack
+## Title-zhCN: |CFFC41F3B界面|R |CFFFF7D0A装备管理|R ItemRack
+## Notes: Context menus for inventory items
+## Notes-zhCN: |CFFC41F3BItemRack|R方便地更换装备☆汉化:Elysium服-|CFFABD473KMUST|R△邮箱:|CFFD2B48C2604083385@qq.com|R
+## X-Repple: 界面
+## SavedVariables: ItemRack_Users, ItemRack_Settings, ItemRack_Events, Rack_User
+## OptionalDeps: IsMounted, ButtonHole
+localization.lua
+ItemRack.lua
+ItemRack.xml
+ItemRackSets.xml

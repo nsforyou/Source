@@ -1,0 +1,11 @@
+## Title:|CFFFF8000辅助|R 拍卖行助手依赖库
+## Notes:|CFFDD66DDStubby|R 动态加载拍卖助手
+## X-Repple: 辅助
+## Interface: 11200
+## SavedVariables: StubbyConfig
+##
+## Version: 3.5.0.0908 (Platypus)
+## Revision: $Id: Stubby.toc 908 2006-06-21 04:29:55Z mentalpower $
+## URL: http://auctioneeraddon.com/dl/Stubby
+Stubby.xml
+

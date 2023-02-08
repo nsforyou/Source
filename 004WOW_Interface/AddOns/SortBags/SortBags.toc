@@ -1,0 +1,7 @@
+## Interface: 11200
+## Title: 背包整理
+## Title-zhCN:|CFFFF8000辅助|R 背包整理
+## Notes: 自动排序整理背包
+## Author: shirsig
+## SavedVariablesPerCharacter: SortBagsRightToLeft
+SortBags.lua

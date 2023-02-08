@@ -1,0 +1,23 @@
+﻿## Interface: 11200
+## Title: AtlasLoot Enhanced
+## Notes: Shows the possible loot from the bosses
+## Title-zhCN:AtlasLoot 拾取浏览器
+## Notes-zhCN:显示副本的掉落
+## Author: Daviesh
+## Version: 4.06.06
+## Dependencies: !Libs
+## SavedVariablesPerCharacter: AtlasLootCharDB
+## OptionalDeps: Alphamap, AtlasLoader, LootLink, ItemSync, DewdropLib, Ace2, EquipCompare, EQCompare
+
+Locale\Locale.xml
+Bossnames\BossNames.xml
+Sets\Sets.xml
+Crafting\Crafting.xml
+PvP\PvP.xml
+WorldEvents\WorldEvents.xml
+Factions\Factions.xml
+Instances\Instances.xml
+WorldBosses\WorldBosses.xml
+TableRegister\TableRegister.xml
+Tooltips\knowntooltips.lua
+Core\AtlasLoot.xml

@@ -1,0 +1,6 @@
+## Interface: 11200
+## Title: C
+## Title-zhCN: 一键治疗依赖
+## Notes: Common functions and an invisible tooltip.
+## Author: canidae
+C.xml

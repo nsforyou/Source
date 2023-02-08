@@ -1,0 +1,14 @@
+## Interface: 11200
+## Title: IkebotUI for SSP_Vanilla
+## Notes: For conan513gm's SPP
+## Title-zhCN:|CFFDD66DD界面|R |cff0055FFIKEbot|r随机AI操作界面
+## Notes-zhCN:|CFFDD66DDIkebotUI for SSP_Vanilla|R专为conan513的随机AI设计的操作界面
+## Author: Lidocain
+## Version: 22
+## DefaultState: Enabled
+## LoadOnDemand: 0
+IkebotUI.lua
+IkebotUIForm1.xml
+IkebotUIForm3.xml
+IkebotUIForm10.xml
+IkebotUIForm8.xml
