@@ -34,9 +34,7 @@ Modules\Purchases.lua
 Modules\Queue.lua
 Modules\Ready.lua
 Modules\Release.lua
-Modules\Repair.lua
 Modules\Rez.lua
-Modules\Sell.lua
 Modules\Stand.lua
 Modules\Summon.lua
 Modules\Unshapeshift.lua
