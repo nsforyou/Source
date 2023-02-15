@@ -14,7 +14,7 @@ python --version
 
 得到的答案为：
 
-![](https://cdn.jsdelivr.net/gh/nsforyou/Image@master/image/202302150915038.png)![](https://cdn.jsdelivr.net/gh/nsforyou/Image@master/image/202302150915038.png)![](https://cdn.jsdelivr.net/gh/nsforyou/Image@master/image/202302150915038.png)![](https://cdn.jsdelivr.net/gh/nsforyou/Image@master/image/202302150915038.png)
+![](https://cdn.jsdelivr.net/gh/nsforyou/Image@master/image/202302151315800.png)
 
 ## Python3 **简介**
 
