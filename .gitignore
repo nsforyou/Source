@@ -1,2 +1,3 @@
 # 配置.vcscode文件夹不参与git的仓库同步管理，避免泄露token信息
 .vscode/
+.git/
